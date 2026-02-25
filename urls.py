@@ -7,6 +7,10 @@ urlpatterns = [
     # Dashboard
     path('', views.dashboard, name='dashboard'),
 
+    # Navigation tab aliases
+    path('files/', views.folders_list, name='files'),
+
+
     # Folder
     path('folders/', views.folders_list, name='folders_list'),
     path('folders/add/', views.folder_add, name='folder_add'),
